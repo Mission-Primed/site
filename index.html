@@ -3,27 +3,141 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Mission-Primed | IT Services</title>
-  <meta name="description" content="Mission-Primed provides professional IT services in San Antonio and Austin, built with security-first best practices." />
+  <title>Mission-Primed | Cybersecurity & IT Services</title>
+  <meta name="description" content="Professional IT services built with security-first best practices. Serving San Antonio & Austin." />
+  <link rel="stylesheet" href="/styles.css" />
 </head>
 <body>
-  <main style="max-width: 900px; margin: 60px auto; font-family: Arial, sans-serif; padding: 0 18px;">
-    <h1>Mission-Primed</h1>
-    <p><strong>Professional IT services built with security-first best practices.</strong></p>
-    <p>Serving San Antonio & Austin.</p>
-    <p>Email: <a href="mailto:info@mission-primed.com">info@mission-primed.com</a></p>
 
-    <hr style="margin: 28px 0;" />
+  <!-- Top Bar -->
+  <header class="topbar">
+    <div class="container">
+      <div class="topbar-inner">
+        <a class="brand" href="/">
+          <img src="/assets/logo.png" alt="Mission-Primed logo" />
+          <div class="brand-title">
+            <strong>MISSION-PRIMED</strong>
+            <span>Cybersecurity & IT Services</span>
+          </div>
+        </a>
 
-    <nav style="display:flex; gap:14px; flex-wrap:wrap;">
-      <a href="/services/">Services</a>
-      <a href="/cybersecurity/">Cybersecurity</a>
-      <a href="/compliance/">Compliance</a>
-      <a href="/about/">About</a>
-      <a href="/contact/">Contact</a>
-      <a href="/legal/privacy/">Privacy</a>
-      <a href="/legal/terms/">Terms</a>
-    </nav>
+        <nav class="nav">
+          <a href="/services/">Services</a>
+          <a href="/cybersecurity/">Cybersecurity</a>
+          <a href="/compliance/">Compliance</a>
+          <a href="/about/">About</a>
+          <a href="/contact/" class="cta">Contact</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main class="hero">
+    <div class="container">
+      <div class="hero-grid">
+
+        <section class="hero-card">
+          <div class="hero-left">
+            <div class="kicker">
+              <b>SECURITY-FIRST</b>
+              <span>IT services for small business and teams that can’t afford downtime.</span>
+            </div>
+
+            <h1 class="h1">
+              Harden your business.<br/>
+              Stay <span class="accent">mission-ready</span>.
+            </h1>
+
+            <p class="sub">
+              Mission-Primed delivers practical cybersecurity and IT support built on proven fundamentals:
+              least privilege, patch discipline, modern MFA, and clean documentation — not buzzwords.
+            </p>
+
+            <div class="hero-actions">
+              <a class="btn primary" href="/contact/">Request a quote</a>
+              <a class="btn" href="/services/">View services</a>
+              <a class="btn gold" href="mailto:info@mission-primed.com">Email us</a>
+            </div>
+
+            <div class="mini">
+              Serving San Antonio & Austin • Remote support available • Rapid response options
+            </div>
+          </div>
+        </section>
+
+        <aside class="hero-card">
+          <div class="hero-right">
+            <p class="panel-title">What you get (no nonsense)</p>
+
+            <div class="trust">
+              <div class="trust-item">
+                <b>Security baseline in plain English</b>
+                <p>MFA, device hardening, backups, and access control — set correctly and documented.</p>
+              </div>
+
+              <div class="trust-item">
+                <b>IT support that prevents repeat problems</b>
+                <p>Root-cause fixes, standard builds, patch cadence, and clean handoff notes.</p>
+              </div>
+
+              <div class="trust-item">
+                <b>Compliance-ready habits</b>
+                <p>Audit-friendly logs, access reviews, asset inventory, and policies that match reality.</p>
+              </div>
+            </div>
+
+            <div class="badges">
+              <span class="badge em">Emerald-standard controls</span>
+              <span class="badge au">Gold-grade professionalism</span>
+              <span class="badge">Zero fluff</span>
+            </div>
+          </div>
+        </aside>
+
+      </div>
+
+      <!-- Services Snapshot -->
+      <section class="section">
+        <h2>Core services</h2>
+
+        <div class="cards">
+          <div class="card em">
+            <h3>Managed IT & Helpdesk</h3>
+            <p>Endpoint setup, patching, remote support, and user onboarding/offboarding.</p>
+            <a class="link" href="/services/">Explore</a>
+          </div>
+
+          <div class="card au">
+            <h3>Cybersecurity Hardening</h3>
+            <p>MFA, password policy, device baselines, admin control, and incident readiness.</p>
+            <a class="link" href="/cybersecurity/">Explore</a>
+          </div>
+
+          <div class="card">
+            <h3>Compliance & Documentation</h3>
+            <p>Policies, inventories, access reviews, and evidence trails that don’t fall apart.</p>
+            <a class="link" href="/compliance/">Explore</a>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="container">
+          <div>
+            <strong style="color:#F5F5F5;">Mission-Primed</strong> —
+            <span>Cybersecurity & IT Services</span>
+          </div>
+          <div style="margin-top:8px;">
+            Email: <a href="mailto:info@mission-primed.com">info@mission-primed.com</a>
+            • <a href="/legal/privacy/">Privacy</a>
+            • <a href="/legal/terms/">Terms</a>
+          </div>
+        </div>
+      </footer>
+
+    </div>
   </main>
+
 </body>
 </html>
