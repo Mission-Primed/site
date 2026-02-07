@@ -4,452 +4,309 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>IT Services | Mission-Primed</title>
-  <meta name="description" content="Managed IT, helpdesk, Microsoft 365 / Google Workspace, endpoint management, backups, networks, and on-site support — security-first and documented." />
+  <meta name="description" content="Security-first IT services for small teams in San Antonio & Austin. Clean standards, predictable support, real documentation." />
   <link rel="stylesheet" href="/styles.css" />
 </head>
 
 <body>
-  <!-- Top Nav -->
-  <header class="topbar">
-    <div class="container topbar__inner">
+  <!-- Ambient background -->
+  <div class="bg-ambient" aria-hidden="true"></div>
+
+  <!-- Header (match homepage) -->
+  <header class="site-header">
+    <div class="container header-inner">
       <a class="brand" href="/">
-        <img class="brand__mark" src="/assets/logo.png" alt="Mission-Primed logo" />
-        <div class="brand__text">
-          <div class="brand__name">MISSION-PRIMED</div>
-          <div class="brand__tag">Cybersecurity &amp; IT Services</div>
+        <img class="brand-logo" src="/assets/logo.png" alt="Mission-Primed logo" />
+        <div class="brand-text">
+          <div class="brand-name">MISSION-PRIMED</div>
+          <div class="brand-tag">Cybersecurity &amp; IT Services</div>
         </div>
       </a>
 
       <nav class="nav">
-        <a class="nav__link" href="/services/">Services</a>
-        <a class="nav__link is-active" href="/it-services/">IT Services</a>
-        <a class="nav__link" href="/cybersecurity/">Cybersecurity</a>
-        <a class="nav__link" href="/compliance/">Compliance</a>
-        <a class="nav__link" href="/about/">About</a>
-        <a class="nav__cta" href="/contact/">Contact</a>
+        <a class="nav-link" href="/services/">Services</a>
+        <a class="nav-link is-active" href="/it-services/">IT Services</a>
+        <a class="nav-link" href="/cybersecurity/">Cybersecurity</a>
+        <a class="nav-link" href="/compliance/">Compliance</a>
+        <a class="nav-link" href="/about/">About</a>
+        <a class="nav-cta" href="/contact/">Contact</a>
       </nav>
     </div>
   </header>
 
-  <!-- Hero -->
-  <main class="page">
-    <section class="hero hero--inner">
-      <div class="container hero__grid">
-        <div class="card hero__card">
-          <div class="pill">
-            <span class="pill__dot"></span>
-            <span class="pill__text">SECURITY-FIRST IT</span>
-            <span class="pill__muted">— support that prevents repeat problems</span>
+  <main class="container page">
+    <!-- HERO: two-panel like homepage -->
+    <section class="hero-grid">
+      <!-- Left hero card -->
+      <div class="card hero-card">
+        <div class="pill">
+          <span class="dot"></span>
+          <span class="pill-label">SECURITY-FIRST IT</span>
+          <span class="pill-sep">—</span>
+          <span class="pill-muted">support that prevents repeat problems</span>
+        </div>
+
+        <h1 class="hero-title">
+          IT that runs clean and stays <span class="accent-emerald">mission-ready</span>.
+        </h1>
+
+        <p class="hero-sub">
+          Most IT “support” is reactive. We build stable systems: sane standards, predictable patching,
+          clean backups, and documentation you can hand to anyone — not tribal knowledge.
+        </p>
+
+        <div class="cta-row">
+          <a class="btn btn-primary" href="/contact/">Request a quote</a>
+          <a class="btn btn-secondary" href="#packages">See packages</a>
+          <a class="btn btn-gold" href="mailto:info@mission-primed.com">Email us</a>
+        </div>
+
+        <div class="meta-row">
+          Serving San Antonio &amp; Austin • Remote + on-site options • Fast response, clean handoffs
+        </div>
+      </div>
+
+      <!-- Right: “What you get” card -->
+      <aside class="card hero-side">
+        <h2 class="side-title">What you get <span class="muted">(no nonsense)</span></h2>
+
+        <div class="stack">
+          <div class="mini-card">
+            <div class="mini-title">Baseline hardening + MFA</div>
+            <div class="mini-text">Secure-by-default device setup, account protections, and admin separation.</div>
           </div>
 
-          <h1 class="hero__title">
-            IT that <span class="accent-gold">runs clean</span> and stays
-            <span class="accent-emerald">mission-ready</span>.
-          </h1>
-
-          <p class="hero__lead">
-            Most IT “support” is reactive. We build stable systems: sane standards, predictable patching, clean backups,
-            and documentation you can actually use. No mystery configs. No tribal knowledge.
-          </p>
-
-          <div class="hero__actions">
-            <a class="btn btn--primary" href="/contact/">Request a quote</a>
-            <a class="btn btn--ghost" href="#packages">See packages</a>
-            <a class="btn btn--outline" href="mailto:info@mission-primed.com">Email us</a>
+          <div class="mini-card">
+            <div class="mini-title">Helpdesk that fixes root causes</div>
+            <div class="mini-text">Repeat issues get standardized solutions, not endless ticket churn.</div>
           </div>
 
-          <div class="hero__meta">
-            <span>Serving San Antonio &amp; Austin</span>
-            <span class="dot">•</span>
-            <span>Remote + on-site options</span>
-            <span class="dot">•</span>
-            <span>Fast response, clean handoffs</span>
+          <div class="mini-card">
+            <div class="mini-title">Backups that actually restore</div>
+            <div class="mini-text">Scheduled, tested restores, plus documented recovery steps.</div>
+          </div>
+
+          <div class="mini-card">
+            <div class="mini-title">Documentation you can hand to anyone</div>
+            <div class="mini-text">Network map, admin inventory, vendor list, and “how we run IT here.”</div>
           </div>
         </div>
 
-        <aside class="card hero__side">
-          <h2 class="card__title">What you get (no nonsense)</h2>
+        <div class="chip-row">
+          <span class="chip chip-emerald">Emerald-standard controls</span>
+          <span class="chip chip-gold">Gold-grade professionalism</span>
+          <span class="chip">Zero fluff</span>
+        </div>
+      </aside>
+    </section>
 
-          <div class="stack">
-            <div class="tile">
-              <div class="tile__title">Baseline hardening + MFA</div>
-              <div class="tile__text">Secure-by-default device setup, account protections, and admin separation.</div>
-            </div>
-
-            <div class="tile">
-              <div class="tile__title">Helpdesk that fixes root causes</div>
-              <div class="tile__text">Repeat issues get standardized solutions, not endless ticket churn.</div>
-            </div>
-
-            <div class="tile">
-              <div class="tile__title">Backups that actually restore</div>
-              <div class="tile__text">Scheduled, tested restores, and documented recovery steps.</div>
-            </div>
-
-            <div class="tile">
-              <div class="tile__title">Documentation you can hand to anyone</div>
-              <div class="tile__text">Network map, admin inventory, vendor list, and “how we run IT here.”</div>
-            </div>
-
-            <div class="tagrow">
-              <span class="tag tag--emerald">Emerald-standard controls</span>
-              <span class="tag tag--gold">Gold-grade professionalism</span>
-              <span class="tag">Zero fluff</span>
-            </div>
-          </div>
-        </aside>
+    <!-- Stats row (match homepage style) -->
+    <section class="stats">
+      <div class="stat-card">
+        <div class="stat-top"><span class="stat-kicker">24h</span></div>
+        <div class="stat-label">rapid response options</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-top"><span class="stat-kicker">Week 1</span></div>
+        <div class="stat-label">baseline security + standards</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-top"><span class="stat-kicker">Every change</span></div>
+        <div class="stat-label">documented and handed off</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-top"><span class="stat-kicker">SA + ATX</span></div>
+        <div class="stat-label">local + remote support</div>
       </div>
     </section>
 
-    <!-- Trust / Outcomes strip -->
-    <section class="strip">
-      <div class="container strip__grid">
-        <div class="strip__item">
-          <div class="kpi">
-            <div class="kpi__num accent-emerald">↓</div>
-            <div class="kpi__label">Fewer repeat tickets</div>
-            <div class="kpi__text">Standards + automation reduce noise.</div>
-          </div>
-        </div>
-        <div class="strip__item">
-          <div class="kpi">
-            <div class="kpi__num accent-gold">✓</div>
-            <div class="kpi__label">Cleaner audits</div>
-            <div class="kpi__text">Inventory, access reviews, and evidence trails.</div>
-          </div>
-        </div>
-        <div class="strip__item">
-          <div class="kpi">
-            <div class="kpi__num accent-emerald">⟲</div>
-            <div class="kpi__label">Reliable recovery</div>
-            <div class="kpi__text">Backups tested, not assumed.</div>
-          </div>
-        </div>
-        <div class="strip__item">
-          <div class="kpi">
-            <div class="kpi__num accent-gold">≡</div>
-            <div class="kpi__label">Clear ownership</div>
-            <div class="kpi__text">Who owns what, and what happens next.</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Core IT service blocks -->
+    <!-- Core deliverables -->
     <section class="section">
-      <div class="container">
-        <div class="section__head">
-          <h2 class="section__title">IT Services</h2>
-          <p class="section__lead">
-            Pick what you need or bundle it into a managed plan. Everything is documented and built with least-privilege thinking.
-          </p>
+      <div class="section-head">
+        <h2 class="section-title">Core deliverables</h2>
+        <p class="section-sub">If it’s not documented, it didn’t happen. This is what we ship.</p>
+      </div>
+
+      <div class="grid-3">
+        <div class="card service-card">
+          <h3 class="card-title">Managed IT + Helpdesk</h3>
+          <p class="card-text">Users supported, devices standardized, and issues resolved with root-cause fixes.</p>
+          <ul class="list">
+            <li>Remote + on-site support</li>
+            <li>Onboarding/offboarding</li>
+            <li>Standard builds and patch cadence</li>
+          </ul>
         </div>
 
-        <div class="grid grid--3">
-          <article class="card card--service">
-            <h3 class="card__h3">Managed IT &amp; Helpdesk</h3>
-            <p class="card__p">
-              Day-to-day support plus the work that prevents problems: standards, patch cadence, user provisioning, and clean handoffs.
-            </p>
-            <ul class="list">
-              <li>Remote helpdesk + optional on-site support</li>
-              <li>New hire onboarding / offboarding</li>
-              <li>Device standards and baseline builds</li>
-              <li>Ticket trends + root-cause fixes</li>
-            </ul>
-            <a class="link" href="#packages">See managed plans →</a>
-          </article>
+        <div class="card service-card">
+          <h3 class="card-title">Microsoft 365 / Google Workspace</h3>
+          <p class="card-text">Identity and collaboration secured with sane defaults, MFA, and admin separation.</p>
+          <ul class="list">
+            <li>MFA + conditional access baseline</li>
+            <li>Admin roles + shared mailbox hygiene</li>
+            <li>SPF/DKIM/DMARC alignment support</li>
+          </ul>
+        </div>
 
-          <article class="card card--service">
-            <h3 class="card__h3">Microsoft 365 / Google Workspace</h3>
-            <p class="card__p">
-              Secure identity + email + collaboration done right. MFA, admin separation, mail authentication, and clean policy baselines.
-            </p>
-            <ul class="list">
-              <li>MFA enforcement and admin roles</li>
-              <li>SPF / DKIM / DMARC + anti-spoofing</li>
-              <li>Drive/SharePoint permissions cleanup</li>
-              <li>Device sign-in policies and alerts</li>
-            </ul>
-            <a class="link" href="/contact/">Ask about hardening →</a>
-          </article>
-
-          <article class="card card--service">
-            <h3 class="card__h3">Endpoint Management</h3>
-            <p class="card__p">
-              Keep laptops and desktops consistent: patching, encryption, standard apps, and enforceable policies.
-            </p>
-            <ul class="list">
-              <li>Disk encryption + secure configs</li>
-              <li>Patch management and reboots that stick</li>
-              <li>EDR/AV health monitoring</li>
-              <li>Local admin removal + least privilege</li>
-            </ul>
-            <a class="link" href="/cybersecurity/">Security posture tie-in →</a>
-          </article>
-
-          <article class="card card--service">
-            <h3 class="card__h3">Networks &amp; Wi-Fi</h3>
-            <p class="card__p">
-              Stable internet and segmented Wi-Fi. Secure guest access. Documented equipment and configurations.
-            </p>
-            <ul class="list">
-              <li>Router/switch/AP setup and cleanup</li>
-              <li>Guest network separation</li>
-              <li>DNS filtering and safe defaults</li>
-              <li>Network map + admin inventory</li>
-            </ul>
-            <a class="link" href="/contact/">Get a site check →</a>
-          </article>
-
-          <article class="card card--service">
-            <h3 class="card__h3">Backups &amp; Recovery</h3>
-            <p class="card__p">
-              Backups that restore. We implement policies and test recovery so ransomware isn’t a death sentence.
-            </p>
-            <ul class="list">
-              <li>Workstation + server backup plans</li>
-              <li>Versioning + retention policies</li>
-              <li>Quarterly restore tests (recommended)</li>
-              <li>Written recovery runbooks</li>
-            </ul>
-            <a class="link" href="/compliance/">Documentation &amp; evidence →</a>
-          </article>
-
-          <article class="card card--service">
-            <h3 class="card__h3">On-site Support &amp; Installs</h3>
-            <p class="card__p">
-              When remote isn’t enough: deployments, cabling cleanup, workstation swaps, and office bring-ups.
-            </p>
-            <ul class="list">
-              <li>New office / move support</li>
-              <li>Workstation imaging and swaps</li>
-              <li>Printer + scanner setup</li>
-              <li>Wi-Fi coverage improvements</li>
-            </ul>
-            <a class="link" href="/contact/">Schedule on-site →</a>
-          </article>
+        <div class="card service-card">
+          <h3 class="card-title">Backups + Recovery</h3>
+          <p class="card-text">Backups that restore — tested and written down so recovery isn’t guesswork.</p>
+          <ul class="list">
+            <li>Endpoint + cloud backup strategy</li>
+            <li>Monthly restore tests</li>
+            <li>Documented recovery playbooks</li>
+          </ul>
         </div>
       </div>
     </section>
 
-    <!-- How we work -->
-    <section class="section section--alt">
-      <div class="container">
-        <div class="section__head">
-          <h2 class="section__title">How we work</h2>
-          <p class="section__lead">
-            Clear steps. Clear ownership. No “we’ll figure it out later.”
-          </p>
+    <!-- How it works (same cadence as homepage) -->
+    <section class="section">
+      <div class="section-head split">
+        <h2 class="section-title">How it works</h2>
+        <p class="section-sub">A simple process. No mystery. No chaos.</p>
+      </div>
+
+      <div class="grid-3">
+        <div class="card step-card">
+          <div class="step-badge">1</div>
+          <h3 class="card-title">Assess</h3>
+          <p class="card-text">15–30 min intake. We inventory what matters, identify risk, and set priorities.</p>
+          <div class="tiny-muted">Output: quick findings + recommended baseline</div>
         </div>
 
-        <div class="grid grid--4">
-          <div class="card step">
-            <div class="step__num">01</div>
-            <h3 class="step__title">Discovery</h3>
-            <p class="step__text">Inventory systems, access, critical apps, and current pain points. Identify risk fast.</p>
-          </div>
+        <div class="card step-card">
+          <div class="step-badge">2</div>
+          <h3 class="card-title">Stabilize</h3>
+          <p class="card-text">Standard builds, patch cadence, MFA, backups, and clean admin ownership.</p>
+          <div class="tiny-muted">Output: known-good baseline + fewer repeat issues</div>
+        </div>
 
-          <div class="card step">
-            <div class="step__num">02</div>
-            <h3 class="step__title">Baseline</h3>
-            <p class="step__text">MFA, admin separation, patch policy, backup plan, and device standards.</p>
-          </div>
-
-          <div class="card step">
-            <div class="step__num">03</div>
-            <h3 class="step__title">Stabilize</h3>
-            <p class="step__text">Fix repeat issues, document everything, and create a predictable operating rhythm.</p>
-          </div>
-
-          <div class="card step">
-            <div class="step__num">04</div>
-            <h3 class="step__title">Maintain</h3>
-            <p class="step__text">Ongoing support + quarterly reviews: access checks, restore tests, and policy tuning.</p>
-          </div>
+        <div class="card step-card">
+          <div class="step-badge">3</div>
+          <h3 class="card-title">Maintain</h3>
+          <p class="card-text">Ongoing support, monitoring, reviews, and documentation updates as you grow.</p>
+          <div class="tiny-muted">Output: predictable IT + audit-ready habits</div>
         </div>
       </div>
     </section>
 
     <!-- Packages -->
     <section class="section" id="packages">
-      <div class="container">
-        <div class="section__head">
-          <h2 class="section__title">Managed IT packages</h2>
-          <p class="section__lead">
-            Simple options to avoid empty promises. Exact pricing depends on headcount, devices, and compliance needs.
-          </p>
-        </div>
+      <div class="section-head">
+        <h2 class="section-title">Packages</h2>
+        <p class="section-sub">Pick a starting point. We tailor after the baseline is clean.</p>
+      </div>
 
-        <div class="grid grid--3">
-          <article class="card plan">
-            <div class="plan__top">
-              <h3 class="plan__name">Baseline</h3>
-              <div class="plan__badge tag tag--emerald">Best starter</div>
-            </div>
-            <p class="plan__desc">
-              For small teams that need consistent IT and a security foundation without enterprise complexity.
-            </p>
-            <ul class="list">
-              <li>Helpdesk (remote) + response SLAs</li>
-              <li>Device baseline + patch cadence</li>
-              <li>MFA enforcement + admin separation</li>
-              <li>Backup configuration + monthly checks</li>
-              <li>Core documentation pack</li>
-            </ul>
-            <div class="plan__cta">
-              <a class="btn btn--primary" href="/contact/">Request pricing</a>
-              <a class="btn btn--ghost" href="#faq">Read FAQ</a>
-            </div>
-          </article>
-
-          <article class="card plan plan--featured">
-            <div class="plan__top">
-              <h3 class="plan__name">Standard</h3>
-              <div class="plan__badge tag tag--gold">Most popular</div>
-            </div>
-            <p class="plan__desc">
-              Full coverage with real governance: access reviews, patch reporting, and recovery discipline.
-            </p>
-            <ul class="list">
-              <li>Helpdesk + optional on-site hours</li>
-              <li>Email security: SPF/DKIM/DMARC support</li>
-              <li>Quarterly access review + admin inventory</li>
-              <li>Restore testing (quarterly recommended)</li>
-              <li>Network map + vendor management</li>
-            </ul>
-            <div class="plan__cta">
-              <a class="btn btn--primary" href="/contact/">Get a quote</a>
-              <a class="btn btn--outline" href="/compliance/">Compliance add-ons</a>
-            </div>
-          </article>
-
-          <article class="card plan">
-            <div class="plan__top">
-              <h3 class="plan__name">Compliance-Ready</h3>
-              <div class="plan__badge tag">For audits</div>
-            </div>
-            <p class="plan__desc">
-              For organizations that need evidence trails, policies, and access discipline that survives scrutiny.
-            </p>
-            <ul class="list">
-              <li>Asset inventory + lifecycle tracking</li>
-              <li>Policy baselines + documented exceptions</li>
-              <li>Access reviews + change logging</li>
-              <li>Incident response readiness checklist</li>
-              <li>Audit-friendly reporting cadence</li>
-            </ul>
-            <div class="plan__cta">
-              <a class="btn btn--primary" href="/contact/">Talk requirements</a>
-              <a class="btn btn--ghost" href="/compliance/">See compliance page</a>
-            </div>
-          </article>
-        </div>
-
-        <div class="note">
-          <div class="note__title">One honest note</div>
-          <div class="note__text">
-            If you want “cheap IT,” we’re not it. We build systems that hold up under stress, turnover, and audits.
-            That means standards, documentation, and discipline.
+      <div class="grid-3">
+        <div class="card price-card">
+          <div class="price-top">
+            <div class="price-name">Essentials</div>
+            <div class="price-tag">Best for small teams</div>
           </div>
+          <ul class="list">
+            <li>Helpdesk + device standards</li>
+            <li>MFA baseline + admin separation</li>
+            <li>Patch cadence + basic monitoring</li>
+            <li>Core documentation bundle</li>
+          </ul>
+          <a class="btn btn-secondary full" href="/contact/">Get pricing</a>
+        </div>
+
+        <div class="card price-card featured">
+          <div class="price-top">
+            <div class="price-name">Mission-Ready</div>
+            <div class="price-tag accent-gold">Most popular</div>
+          </div>
+          <ul class="list">
+            <li>Everything in Essentials</li>
+            <li>Backups + restore testing</li>
+            <li>Security baseline checks monthly</li>
+            <li>Quarterly access review + inventory</li>
+          </ul>
+          <a class="btn btn-primary full" href="/contact/">Request a quote</a>
+        </div>
+
+        <div class="card price-card">
+          <div class="price-top">
+            <div class="price-name">Compliance-Assist</div>
+            <div class="price-tag">For regulated needs</div>
+          </div>
+          <ul class="list">
+            <li>Audit-friendly policies + evidence</li>
+            <li>Access reviews + asset inventory</li>
+            <li>Log hygiene + change tracking</li>
+            <li>Documentation structured for handoff</li>
+          </ul>
+          <a class="btn btn-gold full" href="/contact/">Talk requirements</a>
+        </div>
+      </div>
+
+      <div class="note-card">
+        <div class="note-title">Plain-English promise</div>
+        <div class="note-text">
+          You’ll know what’s installed, who has access, what gets patched, what’s backed up, and what to do when something breaks.
+          No mystery configs. No “only Bob knows.”
         </div>
       </div>
     </section>
 
     <!-- FAQ -->
-    <section class="section section--alt" id="faq">
-      <div class="container">
-        <div class="section__head">
-          <h2 class="section__title">FAQ</h2>
-          <p class="section__lead">Questions people ask before they trust someone with their systems.</p>
+    <section class="section">
+      <div class="section-head">
+        <h2 class="section-title">FAQ</h2>
+        <p class="section-sub">Fast answers. No sales fog.</p>
+      </div>
+
+      <div class="grid-2">
+        <div class="card faq-card">
+          <h3 class="card-title">Do you do on-site support?</h3>
+          <p class="card-text">Yes — San Antonio &amp; Austin. Remote is available for everything else.</p>
         </div>
 
-        <div class="grid grid--2">
-          <div class="card faq">
-            <h3 class="faq__q">Do you do one-time fixes?</h3>
-            <p class="faq__a">
-              Yes — but we’ll still document what we touch and recommend a baseline if we find serious gaps.
-              One-time work without standards turns into recurring fires.
-            </p>
-          </div>
-
-          <div class="card faq">
-            <h3 class="faq__q">Can you work with our current vendors?</h3>
-            <p class="faq__a">
-              Yes. We’ll inventory what you have, clean up access, and create a vendor/contact list so nothing is trapped in one person’s inbox.
-            </p>
-          </div>
-
-          <div class="card faq">
-            <h3 class="faq__q">Do you support Mac and Windows?</h3>
-            <p class="faq__a">
-              Yes. The goal is consistent policy, patched devices, strong identity controls, and predictable support — regardless of OS.
-            </p>
-          </div>
-
-          <div class="card faq">
-            <h3 class="faq__q">How fast is response?</h3>
-            <p class="faq__a">
-              It depends on the plan and hours. We set expectations in writing and prioritize outages/security incidents.
-              No guessing games.
-            </p>
-          </div>
-
-          <div class="card faq">
-            <h3 class="faq__q">Are you “MSP style” or “security-first”?</h3>
-            <p class="faq__a">
-              Security-first — but practical. We don’t break productivity. We lock down what matters, and document every decision.
-            </p>
-          </div>
-
-          <div class="card faq">
-            <h3 class="faq__q">What do you need from us to start?</h3>
-            <p class="faq__a">
-              A short intake call, current admin contacts, and approval to inventory devices/accounts. We’ll do the heavy lift.
-            </p>
-          </div>
+        <div class="card faq-card">
+          <h3 class="card-title">Will you work with my current vendor?</h3>
+          <p class="card-text">Yes. We’ll document the environment and clean up ownership so it’s not fragile.</p>
         </div>
 
-        <div class="cta">
-          <div class="cta__left">
-            <h2 class="cta__title">Ready to stabilize your IT?</h2>
-            <p class="cta__text">
-              Tell us your headcount, device count, and what’s been breaking. We’ll recommend the cleanest path forward.
-            </p>
-          </div>
-          <div class="cta__right">
-            <a class="btn btn--primary" href="/contact/">Request a quote</a>
-            <a class="btn btn--outline" href="mailto:info@mission-primed.com">Email info@mission-primed.com</a>
-          </div>
+        <div class="card faq-card">
+          <h3 class="card-title">How fast can you start?</h3>
+          <p class="card-text">If it’s urgent, we can do a rapid baseline first and stabilize as we go.</p>
+        </div>
+
+        <div class="card faq-card">
+          <h3 class="card-title">Are you “cybersecurity only”?</h3>
+          <p class="card-text">No. IT and security are married. We do both so your setup is operationally sane.</p>
         </div>
       </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-      <div class="container footer__inner">
-        <div class="footer__brand">
-          <img class="footer__logo" src="/assets/logo.png" alt="Mission-Primed logo" />
-          <div>
-            <div class="footer__name">Mission-Primed</div>
-            <div class="footer__tag">Cybersecurity &amp; IT Services</div>
-          </div>
-        </div>
+    <!-- CTA band -->
+    <section class="cta-band">
+      <div class="cta-left">
+        <h2 class="cta-title">Ready to clean up IT and stay mission-ready?</h2>
+        <p class="cta-sub">Tell us your team size and what’s currently hurting. We’ll propose the simplest path.</p>
+      </div>
+      <div class="cta-right">
+        <a class="btn btn-primary" href="/contact/">Request a quote</a>
+        <a class="btn btn-secondary" href="mailto:info@mission-primed.com">Email info@mission-primed.com</a>
+      </div>
+    </section>
 
-        <div class="footer__links">
-          <a href="/">Home</a>
-          <a href="/services/">Services</a>
-          <a href="/cybersecurity/">Cybersecurity</a>
-          <a href="/compliance/">Compliance</a>
-          <a href="/about/">About</a>
-          <a href="/contact/">Contact</a>
+    <!-- Footer (match homepage) -->
+    <footer class="site-footer">
+      <div class="footer-line"></div>
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <div class="footer-name">Mission-Primed</div>
+          <div class="footer-tag">Cybersecurity &amp; IT Services</div>
+        </div>
+        <div class="footer-links">
+          <a href="mailto:info@mission-primed.com">Email: info@mission-primed.com</a>
+          <span class="sep">•</span>
           <a href="/legal/privacy/">Privacy</a>
+          <span class="sep">•</span>
           <a href="/legal/terms/">Terms</a>
-        </div>
-
-        <div class="footer__meta">
-          <div>Email: <a href="mailto:info@mission-primed.com">info@mission-primed.com</a></div>
-          <div class="muted">Serving San Antonio &amp; Austin • Remote support available</div>
         </div>
       </div>
     </footer>
