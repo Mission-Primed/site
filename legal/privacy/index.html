@@ -2,30 +2,116 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <title>Privacy Policy | Mission-Primed</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Privacy Policy — Mission-Primed</title>
+  <meta name="description" content="Privacy policy for Mission-Primed." />
+  <link rel="stylesheet" href="/styles.css" />
 </head>
+
 <body>
-  <main style="max-width:900px;margin:60px auto;font-family:Arial,sans-serif;padding:0 18px;">
-    <h1>Privacy Policy</h1>
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <a class="brand" href="/">
+        <img class="brand__mark" src="/assets/logo.png" alt="Mission-Primed logo" />
+        <div class="brand__text">
+          <div class="brand__name">MISSION-PRIMED</div>
+          <div class="brand__tag">Cybersecurity &amp; IT Services</div>
+        </div>
+      </a>
 
-    <p>
-      Mission-Primed respects your privacy. We do not sell or share personal information.
-    </p>
+      <nav class="nav">
+        <a class="nav__link" href="/services/">Services</a>
+        <a class="nav__link" href="/cybersecurity/">Cybersecurity</a>
+        <a class="nav__link" href="/compliance/">Compliance</a>
+        <a class="nav__link" href="/about/">About</a>
+        <a class="nav__cta" href="/contact/">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-    <p>
-      Information submitted through email or contact forms is used solely to respond to inquiries
-      and provide requested services.
-    </p>
+  <section class="hero">
+    <div class="container hero__grid">
+      <div class="panel hero__left">
+        <h1>Privacy Policy</h1>
+        <p class="lead">
+          We collect the minimum we need to operate. We do not sell personal data. If you email us, we retain that communication
+          for business purposes and to respond to requests.
+        </p>
+      </div>
 
-    <p>
-      We implement reasonable technical and administrative safeguards to protect sensitive data.
-    </p>
+      <aside class="panel hero__right">
+        <div class="mini">
+          <div class="mini__title">Contact</div>
+          <div class="mini__desc"><a href="mailto:info@mission-primed.com">info@mission-primed.com</a></div>
+        </div>
+        <div class="mini">
+          <div class="mini__title">Last updated</div>
+          <div class="mini__desc"><span id="updated"></span></div>
+        </div>
+      </aside>
+    </div>
+  </section>
 
-    <p>
-      If you have questions regarding this policy, please contact info@mission-primed.com.
-    </p>
+  <section class="section section--alt">
+    <div class="container">
+      <div class="panel">
+        <h2>Information we collect</h2>
+        <ul class="list">
+          <li><b>Contact information</b> you provide (name, email, organization) when you reach out.</li>
+          <li><b>Communications</b> (emails and messages) to respond and maintain business records.</li>
+          <li><b>Basic technical data</b> (e.g., IP address, device/browser) as part of standard web server logs.</li>
+        </ul>
 
-    <p><a href="/">Back to home</a></p>
-  </main>
+        <h2>How we use information</h2>
+        <ul class="list">
+          <li>To respond to inquiries and provide services.</li>
+          <li>To improve site reliability and security.</li>
+          <li>To comply with legal obligations and enforce agreements.</li>
+        </ul>
+
+        <h2>Sharing</h2>
+        <ul class="list">
+          <li>We do not sell personal information.</li>
+          <li>We may share information with service providers strictly to operate our business (e.g., email hosting).</li>
+          <li>We may disclose information if required by law or to protect rights and safety.</li>
+        </ul>
+
+        <h2>Data retention</h2>
+        <p class="muted">
+          We retain communications and business records as needed for operations, compliance, and dispute resolution.
+        </p>
+
+        <h2>Your choices</h2>
+        <ul class="list">
+          <li>You can request access, correction, or deletion of personal information we hold, subject to legal limits.</li>
+          <li>Email us at <a href="mailto:info@mission-primed.com">info@mission-primed.com</a>.</li>
+        </ul>
+
+        <h2>Security</h2>
+        <p class="muted">
+          We use reasonable safeguards to protect information. No method of transmission or storage is 100% secure.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div>
+        <div class="footer__brand">Mission-Primed <span class="muted">— Cybersecurity &amp; IT Services</span></div>
+        <div class="footer__meta">
+          Email: <a href="mailto:info@mission-primed.com">info@mission-primed.com</a> ·
+          <a href="/legal/privacy/">Privacy</a> ·
+          <a href="/legal/terms/">Terms</a>
+        </div>
+      </div>
+      <div class="footer__small muted">© <span id="year"></span> Mission-Primed. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+    document.getElementById("updated").textContent = new Date().toLocaleDateString();
+  </script>
 </body>
 </html>
