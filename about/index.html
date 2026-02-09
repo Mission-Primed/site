@@ -2,29 +2,165 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>About | Mission-Primed</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About — Mission-Primed</title>
+  <meta name="description" content="Mission-Primed is a security-first IT and cybersecurity partner focused on reliable delivery, clean documentation, and government-ready execution." />
+  <link rel="stylesheet" href="/styles.css" />
 </head>
+
 <body>
-  <main style="max-width:900px;margin:60px auto;font-family:Arial,sans-serif;padding:0 18px;">
-    <h1>About Mission-Primed</h1>
+  <!-- Top Nav -->
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <a class="brand" href="/">
+        <img class="brand__mark" src="/assets/logo.png" alt="Mission-Primed logo" />
+        <div class="brand__text">
+          <div class="brand__name">MISSION-PRIMED</div>
+          <div class="brand__tag">Cybersecurity &amp; IT Services</div>
+        </div>
+      </a>
 
-    <p>
-      Mission-Primed IT Services provides dependable, security-focused technology support
-      for small businesses and growing organizations in the San Antonio and Austin areas.
-    </p>
+      <nav class="nav">
+        <a class="nav__link" href="/services/">Services</a>
+        <a class="nav__link" href="/cybersecurity/">Cybersecurity</a>
+        <a class="nav__link" href="/compliance/">Compliance</a>
+        <a class="nav__link" href="/about/" aria-current="page">About</a>
+        <a class="nav__cta" href="/contact/">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-    <p>
-      We focus on practical solutions, clear communication, and systems that simply work.
-      Our approach prioritizes stability, security, and long-term reliability over trends or unnecessary complexity.
-    </p>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero__grid">
+      <div class="panel hero__left">
+        <h1>Built for mission outcomes — not slide decks.</h1>
+        <p class="lead">
+          Mission-Primed is a security-first IT and cybersecurity partner. We keep it simple:
+          reduce risk, keep systems stable, document everything, and deliver work that stands up in audits.
+        </p>
 
-    <p>
-      If you need straightforward IT support from a team that values professionalism and accountability,
-      we’re here to help.
-    </p>
+        <div class="chips">
+          <span class="chip chip--emerald">Security-first operations</span>
+          <span class="chip chip--gold">Government-ready delivery</span>
+          <span class="chip">Clean documentation</span>
+          <span class="chip">Repeatable playbooks</span>
+        </div>
+      </div>
 
-    <p><a href="/">Back to home</a></p>
-  </main>
+      <aside class="panel hero__right">
+        <div class="pill">
+          <span class="pill__dot"></span>
+          <div class="pill__text"><b>Prime-friendly</b> subcontract support · discrete delivery · scope control</div>
+        </div>
+
+        <div class="stack">
+          <div class="mini">
+            <div class="mini__title">What we optimize for</div>
+            <div class="mini__desc">Uptime, auditability, and predictable execution — not “hero mode” firefighting.</div>
+          </div>
+          <div class="mini">
+            <div class="mini__title">What you get</div>
+            <div class="mini__desc">Work products you can hand to a COR, ISSM, auditor, or prime without cleanup.</div>
+          </div>
+        </div>
+
+        <div class="cta">
+          <a class="btn btn--gold" href="/contact/">Start a scope</a>
+          <a class="btn btn--ghost" href="/services/">View services</a>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- Mission / Principles -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="section__head">
+        <div>
+          <h2>Our mission</h2>
+          <p class="subhead">Security that holds up under pressure — and under inspection.</p>
+        </div>
+      </div>
+
+      <div class="cards">
+        <div class="panel card">
+          <h3>Fundamentals win</h3>
+          <ul class="list">
+            <li>Least privilege, modern MFA, patch discipline, and sane segmentation.</li>
+            <li>Hardening baselines that are actually maintainable.</li>
+            <li>Configuration changes tracked, reviewed, and documented.</li>
+          </ul>
+        </div>
+
+        <div class="panel card">
+          <h3>Documentation is a deliverable</h3>
+          <ul class="list">
+            <li>As-builts, diagrams, SOPs, admin runbooks, and evidence packs.</li>
+            <li>Clear handoff notes so primes and agencies don’t get stuck.</li>
+            <li>Templates that match audit expectations.</li>
+          </ul>
+        </div>
+
+        <div class="panel card">
+          <h3>Government subcontract-ready</h3>
+          <ul class="list">
+            <li>Defined scope, milestones, acceptance criteria, and status reporting.</li>
+            <li>Evidence-first approach for controls, compliance, and RMF support.</li>
+            <li>Delivery that works with primes and their tooling/processes.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How we work -->
+  <section class="section">
+    <div class="container">
+      <div class="section__head">
+        <div>
+          <h2>How we work</h2>
+          <p class="subhead">A straightforward delivery rhythm that reduces surprises.</p>
+        </div>
+      </div>
+
+      <div class="steps">
+        <div class="panel step">
+          <div class="step__badge">1</div>
+          <h3>Scope &amp; constraints</h3>
+          <p class="muted">Define the objective, environment, dependencies, and acceptance criteria.</p>
+        </div>
+        <div class="panel step">
+          <div class="step__badge">2</div>
+          <h3>Baseline &amp; evidence</h3>
+          <p class="muted">Inventory, current-state review, quick wins, and evidence collection where needed.</p>
+        </div>
+        <div class="panel step">
+          <div class="step__badge">3</div>
+          <h3>Execute &amp; handoff</h3>
+          <p class="muted">Deliver changes with documentation, runbooks, and a clean closeout packet.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div>
+        <div class="footer__brand">Mission-Primed <span class="muted">— Cybersecurity &amp; IT Services</span></div>
+        <div class="footer__meta">
+          Email: <a href="mailto:info@mission-primed.com">info@mission-primed.com</a> ·
+          <a href="/legal/privacy/">Privacy</a> ·
+          <a href="/legal/terms/">Terms</a>
+        </div>
+      </div>
+      <div class="footer__small muted">© <span id="year"></span> Mission-Primed. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
