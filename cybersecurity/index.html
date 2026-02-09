@@ -2,21 +2,207 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Services | Mission-Primed</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cybersecurity — Mission-Primed</title>
+  <meta name="description" content="Security assessments, hardening baselines, vulnerability management, incident readiness, and compliance-aligned implementation." />
+  <link rel="stylesheet" href="/styles.css" />
 </head>
+
 <body>
-  <main style="max-width: 900px; margin: 60px auto; font-family: Arial, sans-serif; padding: 0 18px;">
-    <h1>Cybersecurity</h1>
-    <ul>
-      <li>Helpdesk & remote support</li>
-      <li>On-site desktop / field support</li>
-      <li>Microsoft 365 & Google Workspace support</li>
-      <li>Network troubleshooting (Wi-Fi, switches, firewalls)</li>
-      <li>Endpoint setup, patching, and hardening</li>
-    </ul>
-    <p>Contact: <a href="mailto:info@mission-primed.com">info@mission-primed.com</a></p>
-    <p><a href="/">Back to home</a></p>
-  </main>
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <a class="brand" href="/">
+        <img class="brand__mark" src="/assets/logo.png" alt="Mission-Primed logo" />
+        <div class="brand__text">
+          <div class="brand__name">MISSION-PRIMED</div>
+          <div class="brand__tag">Cybersecurity &amp; IT Services</div>
+        </div>
+      </a>
+
+      <nav class="nav">
+        <a class="nav__link" href="/services/">Services</a>
+        <a class="nav__link" href="/cybersecurity/" aria-current="page">Cybersecurity</a>
+        <a class="nav__link" href="/compliance/">Compliance</a>
+        <a class="nav__link" href="/about/">About</a>
+        <a class="nav__cta" href="/contact/">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero__grid">
+      <div class="panel hero__left">
+        <h1>Security that survives reality.</h1>
+        <p class="lead">
+          We focus on the controls that actually reduce risk: identity, patching, segmentation, logging, and evidence.
+          Ideal for primes who need a dependable security partner for federal and defense-adjacent work.
+        </p>
+
+        <div class="chips">
+          <span class="chip chip--emerald">Vulnerability management</span>
+          <span class="chip chip--gold">RMF support</span>
+          <span class="chip">Hardening baselines</span>
+          <span class="chip">Logging &amp; detection</span>
+          <span class="chip">Incident readiness</span>
+        </div>
+      </div>
+
+      <aside class="panel hero__right">
+        <div class="pill">
+          <span class="pill__dot"></span>
+          <div class="pill__text"><b>Evidence-first</b> · control mapping · closeout packet for primes/audits</div>
+        </div>
+
+        <div class="stack">
+          <div class="mini">
+            <div class="mini__title">Best fit</div>
+            <div class="mini__desc">Subcontract security engineering, assessment support, and compliance-aligned implementation.</div>
+          </div>
+          <div class="mini">
+            <div class="mini__title">Output</div>
+            <div class="mini__desc">Findings, prioritized plan, remediation guidance, and artifacts you can submit.</div>
+          </div>
+        </div>
+
+        <div class="cta">
+          <a class="btn btn--gold" href="/contact/">Request a SOW</a>
+          <a class="btn btn--ghost" href="/compliance/">Compliance alignment</a>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <section class="section section--alt">
+    <div class="container">
+      <div class="section__head">
+        <div>
+          <h2>Cybersecurity services</h2>
+          <p class="subhead">Practical security engineering + deliverables you can defend.</p>
+        </div>
+      </div>
+
+      <div class="cards">
+        <div class="panel card">
+          <h3>Security Assessment (lightweight)</h3>
+          <ul class="list">
+            <li>Identity and access review (MFA, privilege, shared accounts).</li>
+            <li>Endpoint posture and patching reality check.</li>
+            <li>Logging coverage and “can we investigate?” test.</li>
+          </ul>
+        </div>
+        <div class="panel card">
+          <h3>Vulnerability Management</h3>
+          <ul class="list">
+            <li>Scanner setup/tuning (where applicable), cadence, and reporting.</li>
+            <li>Risk-based prioritization + remediation tracking.</li>
+            <li>Exception workflow with documentation.</li>
+          </ul>
+        </div>
+        <div class="panel card">
+          <h3>Hardening Baselines</h3>
+          <ul class="list">
+            <li>CIS-aligned configuration baselines (practical).</li>
+            <li>Secure admin model, least privilege, and change control.</li>
+            <li>Evidence artifacts for audits and primes.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="cards" style="margin-top:14px;">
+        <div class="panel card">
+          <h3>Logging &amp; Detection</h3>
+          <ul class="list">
+            <li>Define what must be logged (identity, endpoints, critical systems).</li>
+            <li>Alerting for high-signal events (not noise).</li>
+            <li>Runbooks for triage and escalation.</li>
+          </ul>
+        </div>
+        <div class="panel card">
+          <h3>Incident Readiness</h3>
+          <ul class="list">
+            <li>Playbooks, roles, communications, and evidence preservation.</li>
+            <li>Tabletop exercise (realistic scenarios).</li>
+            <li>Post-exercise action plan.</li>
+          </ul>
+        </div>
+        <div class="panel card">
+          <h3>RMF / ATO Support (sub)</h3>
+          <ul class="list">
+            <li>Control implementation support and artifact generation.</li>
+            <li>POA&amp;M support, evidence mapping, and remediation tracking.</li>
+            <li>Support for SSP inputs (as directed by the prime).</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section__head">
+        <div>
+          <h2>Pricing ranges</h2>
+          <p class="subhead">Designed to be competitive for subcontracting. Final rates depend on system sensitivity and reporting requirements.</p>
+        </div>
+      </div>
+
+      <div class="baseline panel">
+        <div>
+          <h3>Labor (subcontract hourly)</h3>
+          <ul class="checks">
+            <li>Security Analyst / Vulnerability Ops: <b>$110–$165/hr</b></li>
+            <li>Security Engineer / Hardening / Logging: <b>$145–$210/hr</b></li>
+            <li>GRC / RMF Support: <b>$135–$205/hr</b></li>
+            <li>Lead SME / Advisor: <b>$175–$250/hr</b></li>
+          </ul>
+          <p class="muted" style="margin-top:10px;">Higher end applies to tight timelines, heavy documentation, and high-sensitivity environments.</p>
+        </div>
+
+        <div>
+          <h3>Common project ranges</h3>
+          <ul class="checks">
+            <li>Security baseline assessment (1–2 weeks): <b>$6k–$18k</b></li>
+            <li>Vuln management program setup (2–6 weeks): <b>$10k–$45k</b></li>
+            <li>Hardening baseline implementation sprint: <b>$12k–$55k</b></li>
+            <li>Incident readiness + tabletop: <b>$7.5k–$25k</b></li>
+            <li>RMF/ATO support (monthly): <b>$8k–$35k/mo</b></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt">
+    <div class="container">
+      <div class="panel cta-box">
+        <div>
+          <h2>Need deliverables that satisfy a prime?</h2>
+          <p class="subhead">We can produce evidence packs, remediation documentation, and clean handoffs.</p>
+        </div>
+        <div class="cta">
+          <a class="btn btn--gold" href="/contact/">Contact</a>
+          <a class="btn btn--ghost" href="/services/">IT services</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div>
+        <div class="footer__brand">Mission-Primed <span class="muted">— Cybersecurity &amp; IT Services</span></div>
+        <div class="footer__meta">
+          Email: <a href="mailto:info@mission-primed.com">info@mission-primed.com</a> ·
+          <a href="/legal/privacy/">Privacy</a> ·
+          <a href="/legal/terms/">Terms</a>
+        </div>
+      </div>
+      <div class="footer__small muted">© <span id="year"></span> Mission-Primed. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
