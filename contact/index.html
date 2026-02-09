@@ -2,27 +2,128 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Contact | Mission-Primed</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact — Mission-Primed</title>
+  <meta name="description" content="Contact Mission-Primed for subcontract support, IT services, cybersecurity, and compliance-aligned delivery." />
+  <link rel="stylesheet" href="/styles.css" />
 </head>
+
 <body>
-  <main style="max-width:900px;margin:60px auto;font-family:Arial,sans-serif;padding:0 18px;">
-    <h1>Contact</h1>
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <a class="brand" href="/">
+        <img class="brand__mark" src="/assets/logo.png" alt="Mission-Primed logo" />
+        <div class="brand__text">
+          <div class="brand__name">MISSION-PRIMED</div>
+          <div class="brand__tag">Cybersecurity &amp; IT Services</div>
+        </div>
+      </a>
 
-    <p>
-      For service inquiries or support requests, please reach out:
-    </p>
+      <nav class="nav">
+        <a class="nav__link" href="/services/">Services</a>
+        <a class="nav__link" href="/cybersecurity/">Cybersecurity</a>
+        <a class="nav__link" href="/compliance/">Compliance</a>
+        <a class="nav__link" href="/about/">About</a>
+        <a class="nav__cta" href="/contact/" aria-current="page">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-    <ul>
-      <li>Email: <a href="mailto:info@mission-primed.com">info@mission-primed.com</a></li>
-      <li>Service Area: San Antonio & Austin, Texas</li>
-    </ul>
+  <section class="hero">
+    <div class="container hero__grid">
+      <div class="panel hero__left">
+        <h1>Contact Mission-Primed</h1>
+        <p class="lead">
+          The fastest way to get a clean scope is email. If you’re a prime, send the requirement bullets and the constraints —
+          we’ll turn it into milestones and deliverables.
+        </p>
 
-    <p>
-      We typically respond within one business day.
-    </p>
+        <div class="chips">
+          <span class="chip chip--emerald">Subcontract support</span>
+          <span class="chip chip--gold">Quick SOW shaping</span>
+          <span class="chip">Evidence packs</span>
+          <span class="chip">IT &amp; security delivery</span>
+        </div>
+      </div>
 
-    <p><a href="/">Back to home</a></p>
-  </main>
+      <aside class="panel hero__right">
+        <div class="pill">
+          <span class="pill__dot"></span>
+          <div class="pill__text"><b>Email</b> · <a href="mailto:info@mission-primed.com">info@mission-primed.com</a></div>
+        </div>
+
+        <div class="stack">
+          <div class="mini">
+            <div class="mini__title">What to include</div>
+            <div class="mini__desc">Environment size, timeline, on-site vs remote, reporting format, and acceptance criteria.</div>
+          </div>
+          <div class="mini">
+            <div class="mini__title">Typical response time</div>
+            <div class="mini__desc">Same or next business day for initial scoping.</div>
+          </div>
+        </div>
+
+        <div class="cta">
+          <a class="btn btn--gold" href="mailto:info@mission-primed.com?subject=Mission-Primed%20Scope%20Request">Email us</a>
+          <a class="btn btn--ghost" href="/services/">Services</a>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <section class="section section--alt">
+    <div class="container">
+      <div class="section__head">
+        <div>
+          <h2>Quick scope checklist</h2>
+          <p class="subhead">Copy/paste this into an email and fill it in.</p>
+        </div>
+      </div>
+
+      <div class="panel baseline">
+        <div>
+          <h3>Environment</h3>
+          <ul class="checks">
+            <li>Org type: (prime / agency / commercial)</li>
+            <li>Users: __ · Endpoints: __ · Sites: __</li>
+            <li>Identity: (M365 / Google / hybrid / other)</li>
+            <li>Key systems: (email, VPN, EDR, ticketing, etc.)</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Requirement</h3>
+          <ul class="checks">
+            <li>Goal: (stabilize / migrate / assess / implement controls)</li>
+            <li>Timeline &amp; constraints: __</li>
+            <li>On-site needed? (yes/no) · Travel? (yes/no)</li>
+            <li>Deliverables needed: (reports, evidence packs, SOPs, diagrams)</li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="muted" style="margin-top:12px;">
+        If you have a requirement list from the prime or agency, send it as-is — we’ll map it to deliverables and acceptance criteria.
+      </p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div>
+        <div class="footer__brand">Mission-Primed <span class="muted">— Cybersecurity &amp; IT Services</span></div>
+        <div class="footer__meta">
+          Email: <a href="mailto:info@mission-primed.com">info@mission-primed.com</a> ·
+          <a href="/legal/privacy/">Privacy</a> ·
+          <a href="/legal/terms/">Terms</a>
+        </div>
+      </div>
+      <div class="footer__small muted">© <span id="year"></span> Mission-Primed. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
