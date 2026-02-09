@@ -19,13 +19,34 @@
         </div>
       </a>
 
-      <nav class="nav">
-        <a class="nav__link" href="/services/">Services</a>
-        <a class="nav__link" href="/cybersecurity/">Cybersecurity</a>
-        <a class="nav__link" href="/compliance/">Compliance</a>
-        <a class="nav__link" href="/about/">About</a>
-        <a class="nav__cta" href="/contact/">Contact</a>
-      </nav>
+<nav class="nav">
+  <div class="nav__left">
+
+    <div class="nav__dropdown">
+      <button class="nav__trigger" aria-expanded="false">Small Business ▾</button>
+      <ul class="nav__menu" role="menu" aria-hidden="true">
+        <li role="none"><a role="menuitem" class="nav__link nav__sublink" href="/small-business/it-services/">IT Services</a></li>
+        <li role="none"><a role="menuitem" class="nav__link nav__sublink" href="/small-business/cybersecurity/">Cybersecurity</a></li>
+      </ul>
+    </div>
+
+    <div class="nav__dropdown">
+      <button class="nav__trigger" aria-expanded="false">Government ▾</button>
+      <ul class="nav__menu" role="menu" aria-hidden="true">
+        <li role="none"><a role="menuitem" class="nav__link nav__sublink" href="/regulated/it-services/">IT Services</a></li>
+        <li role="none"><a role="menuitem" class="nav__link nav__sublink" href="/regulated/cybersecurity/">Cybersecurity</a></li>
+      </ul>
+    </div>
+
+    <a class="nav__link" href="/compliance/">Compliance</a>
+    <a class="nav__link" href="/about/">About</a>
+  </div>
+
+  <div class="nav__right">
+    <a class="nav__cta" href="/contact/">Contact</a>
+  </div>
+</nav>
+
     </div>
   </header>
 
@@ -110,8 +131,46 @@
   </footer>
 
   <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-    document.getElementById("updated").textContent = new Date().toLocaleDateString();
+  (function(){
+    // Enhance all nav dropdowns to be toggleable on click for touch users
+    document.querySelectorAll('.nav__dropdown').forEach(function(dd){
+      var btn = dd.querySelector('.nav__trigger');
+      var menu = dd.querySelector('.nav__menu');
+
+      // Toggle on click
+      btn.addEventListener('click', function(e){
+        var open = dd.classList.toggle('open');
+        btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+        if(open){
+          menu.setAttribute('aria-hidden','false');
+        } else {
+          menu.setAttribute('aria-hidden','true');
+        }
+      });
+
+      // Close dropdown when clicking outside
+      document.addEventListener('click', function(e){
+        if(!dd.contains(e.target)){
+          if(dd.classList.contains('open')){
+            dd.classList.remove('open');
+            btn.setAttribute('aria-expanded','false');
+            menu.setAttribute('aria-hidden','true');
+          }
+        }
+      });
+
+      // Keyboard: Escape closes
+      btn.addEventListener('keydown', function(e){
+        if(e.key === 'Escape' || e.key === 'Esc'){
+          dd.classList.remove('open');
+          btn.setAttribute('aria-expanded','false');
+          menu.setAttribute('aria-hidden','true');
+          btn.focus();
+        }
+      });
+    });
+  })();
   </script>
+
 </body>
 </html>
