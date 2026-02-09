@@ -269,6 +269,45 @@
 
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
+      (function(){
+    // Enhance all nav dropdowns to be toggleable on click for touch users
+    document.querySelectorAll('.nav__dropdown').forEach(function(dd){
+      var btn = dd.querySelector('.nav__trigger');
+      var menu = dd.querySelector('.nav__menu');
+
+      // Toggle on click
+      btn.addEventListener('click', function(e){
+        var open = dd.classList.toggle('open');
+        btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+        if(open){
+          menu.setAttribute('aria-hidden','false');
+        } else {
+          menu.setAttribute('aria-hidden','true');
+        }
+      });
+
+      // Close dropdown when clicking outside
+      document.addEventListener('click', function(e){
+        if(!dd.contains(e.target)){
+          if(dd.classList.contains('open')){
+            dd.classList.remove('open');
+            btn.setAttribute('aria-expanded','false');
+            menu.setAttribute('aria-hidden','true');
+          }
+        }
+      });
+
+      // Keyboard: Escape closes
+      btn.addEventListener('keydown', function(e){
+        if(e.key === 'Escape' || e.key === 'Esc'){
+          dd.classList.remove('open');
+          btn.setAttribute('aria-expanded','false');
+          menu.setAttribute('aria-hidden','true');
+          btn.focus();
+        }
+      });
+    });
+  })();
   </script>
 </body>
 </html>
