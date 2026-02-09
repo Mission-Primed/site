@@ -625,3 +625,117 @@ a:hover{ opacity:.9; }
     justify-content: flex-start;
   }
 }
+
+/* NAV DROPDOWN (desktop hover + mobile click) */
+.nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:18px;
+  position:relative;
+}
+
+/* left group vs right CTA */
+.nav__left{ display:flex; align-items:center; gap:12px; }
+.nav__right{ display:flex; align-items:center; gap:12px; }
+
+/* base link */
+.nav__link{
+  color:var(--muted-100);
+  text-decoration:none;
+  padding:8px 10px;
+  display:inline-block;
+  font-weight:600;
+  border-radius:8px;
+}
+.nav__link:hover,
+.nav__link:focus{ color:var(--accent-100); background: rgba(255,255,255,0.02); outline: none; }
+
+/* dropdown wrapper */
+.nav__dropdown{
+  position:relative;
+  display:inline-block;
+}
+
+/* visible trigger (styled like text button) */
+.nav__trigger{
+  background:transparent;
+  border:0;
+  color:var(--muted-100);
+  font-weight:600;
+  padding:8px 10px;
+  border-radius:8px;
+  cursor:pointer;
+}
+.nav__trigger:hover,
+.nav__trigger:focus{ color:var(--accent-100); background: rgba(255,255,255,0.02); outline:none; }
+
+/* dropdown menu */
+.nav__menu{
+  position:absolute;
+  left:0;
+  top:calc(100% + 8px);
+  min-width:220px;
+  background: linear-gradient(180deg, rgba(20,24,21,0.98), rgba(14,14,14,0.95));
+  border-radius:12px;
+  padding:8px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+  opacity:0;
+  visibility:hidden;
+  transform:translateY(-6px);
+  transition: opacity 160ms ease, transform 160ms ease, visibility 160ms;
+  z-index:50;
+}
+
+/* menu items inside */
+.nav__menu li{ list-style:none; margin:0; }
+.nav__sublink{
+  display:block;
+  padding:10px 12px;
+  color:var(--muted-80);
+  border-radius:8px;
+  font-weight:600;
+}
+.nav__sublink:hover,
+.nav__sublink:focus{ background: rgba(255,255,255,0.02); color:var(--accent-100); outline:none; }
+
+/* show on hover for desktop */
+.nav__dropdown:hover .nav__menu,
+.nav__dropdown:focus-within .nav__menu{
+  opacity:1;
+  visibility:visible;
+  transform:translateY(0);
+}
+
+/* When JS toggles .open on dropdown, make visible */
+.nav__dropdown.open .nav__menu{
+  opacity:1;
+  visibility:visible;
+  transform:translateY(0);
+}
+
+/* small screens: stack nav and make menu full-width under item */
+@media (max-width: 900px){
+  .nav{ flex-direction:column; align-items:flex-start; gap:8px; }
+  .nav__left{ width:100%; display:flex; flex-wrap:wrap; gap:6px; }
+  .nav__right{ width:100%; display:flex; justify-content:flex-end; }
+
+  .nav__menu{
+    position:relative;
+    transform:none;
+    opacity:1;
+    visibility:visible;
+    display:none;
+    background:transparent;
+    box-shadow:none;
+    padding-left: 12px;
+  }
+
+  /* when open, show (JS toggles .open) */
+  .nav__dropdown.open .nav__menu{ display:block; }
+
+  .nav__sublink{ padding:8px 0; color:var(--muted-70); }
+}
+
+/* small visual polish */
+.nav__trigger::after{ content:''; display:inline-block; width:0; height:0; margin-left:6px; }
