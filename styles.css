@@ -528,3 +528,56 @@ a:hover{ opacity:.9; }
   .cta--right{ justify-content:flex-start; }
   .nav{ display:none; } /* keep simple for now; we can add mobile menu later */
 }
+
+/* =========================================================
+   PANEL CONTENT SAFETY PADDING (GLOBAL FIX)
+   ========================================================= */
+
+/* Ensure all panels have usable inner spacing */
+.panel{
+  padding: 28px 30px;
+}
+
+/* Long-form document panels (privacy, terms, compliance text) */
+.panel h2,
+.panel h3,
+.panel p,
+.panel ul,
+.panel ol{
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+/* Comfortable reading width inside panels */
+.panel p,
+.panel li{
+  max-width: 70ch;
+}
+
+/* Lists need real indentation */
+.panel ul,
+.panel ol{
+  padding-left: 1.25rem;
+}
+
+/* Space stacked sections cleanly */
+.panel h2 + p,
+.panel h3 + p{
+  margin-top: 0.6rem;
+}
+
+/* Prevent text from touching glass edges on small screens */
+@media (max-width: 768px){
+  .panel{
+    padding: 22px 20px;
+  }
+
+  .panel p,
+  .panel li{
+    max-width: 100%;
+  }
+}
+
+.panel--document{
+  padding: 34px 38px;
+}
