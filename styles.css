@@ -592,3 +592,36 @@ a:hover{ opacity:.9; }
     grid-template-columns: 1fr;
   }
 }
+
+/* HERO: better vertical alignment + fill right-panel gap */
+.hero__left,
+.hero__right{
+  display: flex;
+  flex-direction: column;
+}
+
+/* Keep the left panel feeling centered and strong */
+.hero__left{
+  justify-content: center;
+}
+
+/* Distribute content in the right panel so it doesn't look empty */
+.hero__right{
+  justify-content: space-between;
+  gap: 14px;
+}
+
+/* Chip row inside right hero panel */
+.hero__chips{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 6px;
+}
+
+/* On smaller screens, don't force "space-between" (looks weird stacked) */
+@media (max-width: 900px){
+  .hero__right{
+    justify-content: flex-start;
+  }
+}
