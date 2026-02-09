@@ -2,30 +2,114 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <title>Terms of Service | Mission-Primed</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Terms of Use — Mission-Primed</title>
+  <meta name="description" content="Terms of use for Mission-Primed." />
+  <link rel="stylesheet" href="/styles.css" />
 </head>
+
 <body>
-  <main style="max-width:900px;margin:60px auto;font-family:Arial,sans-serif;padding:0 18px;">
-    <h1>Terms of Service</h1>
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <a class="brand" href="/">
+        <img class="brand__mark" src="/assets/logo.png" alt="Mission-Primed logo" />
+        <div class="brand__text">
+          <div class="brand__name">MISSION-PRIMED</div>
+          <div class="brand__tag">Cybersecurity &amp; IT Services</div>
+        </div>
+      </a>
 
-    <p>
-      Information on this website is provided for general informational purposes only.
-    </p>
+      <nav class="nav">
+        <a class="nav__link" href="/services/">Services</a>
+        <a class="nav__link" href="/cybersecurity/">Cybersecurity</a>
+        <a class="nav__link" href="/compliance/">Compliance</a>
+        <a class="nav__link" href="/about/">About</a>
+        <a class="nav__cta" href="/contact/">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-    <p>
-      Mission-Primed provides services under separate written agreements or statements of work.
-      Nothing on this site constitutes a binding contract.
-    </p>
+  <section class="hero">
+    <div class="container hero__grid">
+      <div class="panel hero__left">
+        <h1>Terms of Use</h1>
+        <p class="lead">
+          By using this website, you agree to these terms. For contracted services, the signed agreement governs
+          pricing, deliverables, acceptance criteria, and liability.
+        </p>
+      </div>
 
-    <p>
-      We are not responsible for third-party links or content.
-    </p>
+      <aside class="panel hero__right">
+        <div class="mini">
+          <div class="mini__title">Contact</div>
+          <div class="mini__desc"><a href="mailto:info@mission-primed.com">info@mission-primed.com</a></div>
+        </div>
+        <div class="mini">
+          <div class="mini__title">Last updated</div>
+          <div class="mini__desc"><span id="updated"></span></div>
+        </div>
+      </aside>
+    </div>
+  </section>
 
-    <p>
-      For questions, contact info@mission-primed.com.
-    </p>
+  <section class="section section--alt">
+    <div class="container">
+      <div class="panel">
+        <h2>Use of site</h2>
+        <ul class="list">
+          <li>You may use this site for lawful purposes only.</li>
+          <li>You may not attempt to disrupt or compromise the site.</li>
+          <li>We may modify or discontinue the site at any time.</li>
+        </ul>
 
-    <p><a href="/">Back to home</a></p>
-  </main>
+        <h2>No professional advice</h2>
+        <p class="muted">
+          Content on this website is general information and not legal, financial, or compliance advice.
+          Engagements and deliverables are governed by written agreements.
+        </p>
+
+        <h2>Intellectual property</h2>
+        <ul class="list">
+          <li>Site content, branding, and materials are owned by Mission-Primed or licensors.</li>
+          <li>You may not copy, reproduce, or redistribute without permission.</li>
+        </ul>
+
+        <h2>Links to third parties</h2>
+        <p class="muted">
+          We may link to third-party sites. We are not responsible for their content or practices.
+        </p>
+
+        <h2>Limitation of liability</h2>
+        <p class="muted">
+          To the maximum extent allowed by law, Mission-Primed is not liable for indirect, incidental, special,
+          consequential, or punitive damages arising from your use of this website.
+        </p>
+
+        <h2>Changes</h2>
+        <p class="muted">
+          We may update these terms. Continued use of the site indicates acceptance of the updated terms.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div>
+        <div class="footer__brand">Mission-Primed <span class="muted">— Cybersecurity &amp; IT Services</span></div>
+        <div class="footer__meta">
+          Email: <a href="mailto:info@mission-primed.com">info@mission-primed.com</a> ·
+          <a href="/legal/privacy/">Privacy</a> ·
+          <a href="/legal/terms/">Terms</a>
+        </div>
+      </div>
+      <div class="footer__small muted">© <span id="year"></span> Mission-Primed. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+    document.getElementById("updated").textContent = new Date().toLocaleDateString();
+  </script>
 </body>
 </html>
