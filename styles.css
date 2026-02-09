@@ -28,11 +28,29 @@ html,body{ height:100%; }
 body{
   margin:0;
   font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Helvetica Neue", Helvetica;
-  background: radial-gradient(1200px 700px at 30% -10%, rgba(0,115,62,.25), transparent 55%),
-              radial-gradient(900px 600px at 80% 20%, rgba(212,175,55,.14), transparent 55%),
-              var(--black);
+  background: var(--black);        /* base */
   color: var(--white);
   line-height:1.5;
+  position: relative;              /* anchor for z-index stacking */
+  overflow-x: hidden;              /* prevents glow “side scroll” */
+}
+
+/* Fixed background layer (does NOT scroll) */
+body::before{
+  content:"";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+
+  background:
+    radial-gradient(1200px 700px at 30% -10%, rgba(0,115,62,.25), transparent 55%),
+    radial-gradient(900px 600px at 80% 20%, rgba(212,175,55,.14), transparent 55%),
+    radial-gradient(900px 700px at 20% 120%, rgba(0,115,62,.10), transparent 60%),
+    radial-gradient(900px 700px at 90% 120%, rgba(212,175,55,.06), transparent 60%),
+    var(--black);
+
+  transform: translateZ(0);  /* helps some GPUs */
 }
 
 a{ color: var(--white); text-decoration:none; }
@@ -309,9 +327,9 @@ a:hover{ opacity:.9; }
   padding: 72px 0;
 }
 .section--alt{
-  background: linear-gradient(180deg, rgba(18,18,18,.55), rgba(18,18,18,.12));
-  border-top: 1px solid rgba(255,255,255,.04);
-  border-bottom: 1px solid rgba(255,255,255,.04);
+  background: transparent; /* let the fixed background show through */
+  border-top: 1px solid rgba(255,255,255,.06);
+  border-bottom: 1px solid rgba(255,255,255,.06);
 }
 .section__head{
   display:flex;
