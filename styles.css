@@ -753,7 +753,7 @@ h2{font-size:clamp(28px,3vw,42px);letter-spacing:-.035em}h3{letter-spacing:-.025
 .chip,.pill{background:var(--soft);color:var(--white);border-color:var(--border)}.chip--gold,.step__badge{color:var(--gold);background:var(--soft)}
 .nav__trigger,.nav__link{color:var(--white)}.footer{background:var(--panel);border-color:var(--border);padding:40px 0}
 .mini,.badge,.tag,.offer__pill{background:var(--soft);border-color:var(--border);color:var(--white)}
-.list li,.checks li,.footer__meta a,.nav__sublink{color:var(--muted)}.divider{background:var(--border)}.brand__mark{filter:none}.panel::before{display:none}
+.list li,.checks li,.footer__meta a,.nav__sublink,.pill__text{color:var(--muted)}.divider{background:var(--border)}.brand__mark{filter:none}.panel::before{display:none}
 .theme-control{display:flex;align-items:center;gap:8px;font-size:13px;margin-left:auto}.theme-control select{padding:7px;border:1px solid var(--border);border-radius:6px;background:var(--panel);color:var(--white)}
 @media(max-width:700px){.hero{padding:35px 0}.hero__grid{gap:28px}.hero__right{padding:24px}.section{padding:55px 0}.brand__mark{width:85px;height:85px}.topbar__inner{gap:12px}.nav{width:100%}.container{width:calc(100% - 36px)}}
 
