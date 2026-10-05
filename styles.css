@@ -739,3 +739,21 @@ a:hover{ opacity:.9; }
 
 /* small visual polish */
 .nav__trigger::after{ content:''; display:inline-block; width:0; height:0; margin-left:6px; }
+
+/* Shared visual family with Award Primed; preserves existing service content. */
+:root{color-scheme:light;--black:#f7f8f5;--charcoal:#edf1ee;--panel:#fff;--white:#172b30;--muted:#52646a;--emerald:#175c57;--gold:#c49a35;--border:#d7dfdb;--soft:#edf1ee;--radius:12px;--radius-sm:8px;--shadow:0 18px 60px #172b3012;--shadow-soft:none;--max:1240px}
+:root[data-theme="dark"]{color-scheme:dark;--black:#101b20;--charcoal:#22363c;--panel:#18282e;--white:#edf5f3;--muted:#afc2c2;--emerald:#7bd4c5;--gold:#f2c14e;--border:#3a5056;--soft:#22363c}
+body{line-height:1.65;overflow-x:visible}body::before{background:var(--black)}
+.topbar{background:var(--panel);border-color:var(--border);backdrop-filter:none}.topbar__inner{flex-wrap:wrap;gap:20px;padding-top:12px;padding-bottom:12px}
+.brand__mark{content:url('/assets/mission-primed-logo.jpg');width:105px;height:105px;object-fit:contain;background:#fff;border-radius:6px}.brand__name{color:var(--white);letter-spacing:-.5px}.brand__tag{color:var(--muted)}
+.hero{padding:65px 0}.hero h1{font-size:clamp(38px,4.6vw,64px);line-height:1.12;letter-spacing:-.045em}.hero__left{padding:0;background:transparent;border:0;box-shadow:none}.hero__grid{gap:55px}
+.panel,.card,.cta-box,.nav__menu{background:var(--panel);border-color:var(--border);box-shadow:none}.hero__right{border-radius:12px;padding:32px}.section{padding:80px 0}.section--alt{background:var(--charcoal)}
+h2{font-size:clamp(28px,3vw,42px);letter-spacing:-.035em}h3{letter-spacing:-.025em}.lead,.subhead,.mini__desc,.list,.footer__meta{color:var(--muted)}
+.btn{border-radius:6px;box-shadow:none}.btn--gold{background:#175c57;color:#fff;border-color:#175c57}.btn--ghost{background:var(--panel);color:var(--white);border-color:var(--border)}
+.chip,.pill{background:var(--soft);color:var(--white);border-color:var(--border)}.chip--gold,.step__badge{color:var(--gold);background:var(--soft)}
+.nav__trigger,.nav__link{color:var(--white)}.footer{background:var(--panel);border-color:var(--border);padding:40px 0}
+.mini,.badge,.tag,.offer__pill{background:var(--soft);border-color:var(--border);color:var(--white)}
+.list li,.checks li,.footer__meta a,.nav__sublink,.pill__text{color:var(--muted)}.divider{background:var(--border)}.brand__mark{filter:none}.panel::before{display:none}
+.theme-control{display:flex;align-items:center;gap:8px;font-size:13px;margin-left:auto}.theme-control select{padding:7px;border:1px solid var(--border);border-radius:6px;background:var(--panel);color:var(--white)}
+@media(max-width:700px){.hero{padding:35px 0}.hero__grid{gap:28px}.hero__right{padding:24px}.section{padding:55px 0}.brand__mark{width:85px;height:85px}.topbar__inner{gap:12px}.nav{width:100%}.container{width:calc(100% - 36px)}}
+
